@@ -19,7 +19,7 @@ int main() {
     printf("Qual sua escolha: ");
     scanf("%d", &peca);
 
-        switch (peca){
+            switch (peca){
 
         //Condição do movimento da torre usando o FOR
         case 1:
@@ -50,22 +50,19 @@ int main() {
             movimento = 8;
             printf("A rainha se moverá 8 casas para esquerda!\n");
             do {
-                
+
                 printf("Esquerda\n");
                 movimento --;
 
             } while (movimento >= 1);
 
         break;
-    return 0;
+
+        default:
+            printf("Escolha inválida!!");
+            break;    
+    
     }
-
-
-
-
-
-return 0;    
-}
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
