@@ -5,6 +5,67 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
+
+     //Declarando variaveis
+    int movimento, peca;
+
+
+     //Apresentando menu interativo
+    printf("MOVIMENTO PEÇAS DE XADREZ!!!\n");
+    printf("Escolha qual peça deseja mover\n");
+    printf("1 - Torre \n");
+    printf("2 - Bispo\n");
+    printf("3 - Rainha\n");
+    printf("Qual sua escolha: ");
+    scanf("%d", &peca);
+
+        switch (peca){
+
+        //Condição do movimento da torre usando o FOR
+        case 1:
+            
+            printf("A Torre vai se mover 5 casas para frente:\n");
+            for (movimento = 1; movimento <=5; movimento++)
+                {
+                    printf("Frente\n");
+                }
+
+
+        break;
+
+        //Condição do movimento do Bispo usando o while
+        case 2:
+                movimento = 1;
+                printf("O Bispo se movimentará 5 casas na diagonal direita!\n");
+                while (movimento <=5){
+                    printf("Cima\n");
+                    printf("Direita\n");
+                    movimento++;
+                }
+
+        break;
+
+        //Condição do movimento da Rainha usando o do while
+        case 3:
+            movimento = 8;
+            printf("A rainha se moverá 8 casas para esquerda!\n");
+            do {
+                
+                printf("Esquerda\n");
+                movimento --;
+
+            } while (movimento >= 1);
+
+        break;
+    return 0;
+    }
+
+
+
+
+
+return 0;    
+}
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
