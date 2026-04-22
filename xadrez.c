@@ -16,6 +16,7 @@ int main() {
     printf("1 - Torre \n");
     printf("2 - Bispo\n");
     printf("3 - Rainha\n");
+    printf("4 - Cavalo\n");
     printf("Qual sua escolha: ");
     scanf("%d", &peca);
 
@@ -58,6 +59,18 @@ int main() {
 
         break;
 
+        //ADICIONANDO O MOVIMENTO DO CAVALO USANDO LOOP ANINHADO.
+        case 4:
+            printf("O Cavalo se movimentará 2 casas para cima e 1 para direita\n");
+            int vert, hori;
+            vert = 1;
+            while (vert--){
+                for (hori = 0; hori < 2; hori++){
+                    printf("Cima\n");
+                }
+                printf("Direita\n");
+            }
+            break;
         default:
             printf("Escolha inválida!!");
             break;    
